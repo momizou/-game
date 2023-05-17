@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マルバツゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <p id="display-count">○の番</p>
+  </div>
+  <div>
+    <input type="button" class="block" id='b1'>
+    <input type="button" class="block" id='b2'>
+    <input type="button" class="block" id='b3'>
+  </div>
+  <div>
+    <input type="button" class="block" id='b4'>
+    <input type="button" class="block" id='b5'>
+    <input type="button" class="block" id='b6'>
+  </div>
+  <div>
+    <input type="button" class="block" id='b7'>
+    <input type="button" class="block" id='b8'>
+    <input type="button" class="block" id='b9'>
+  </div>
+  <div>
+    <p id="display-result"></p>
+    <input type="button" id= 'reset' value="もう一度遊ぶ">
+  </div>
+  <table id="game-board">
+    <tr>
+      <td onclick="cellClicked(0, 0)"></td>
+      <td onclick="cellClicked(0, 1)"></td>
+      <td onclick="cellClicked(0, 2)"></td>
+    </tr>
+    <tr>
+      <td onclick="cellClicked(1, 0)"></td>
+      <td onclick="cellClicked(1, 1)"></td>
+      <td onclick="cellClicked(1, 2)"></td>
+    </tr>
+    <tr>
+      <td onclick="cellClicked(2, 0)"></td>
+      <td onclick="cellClicked(2, 1)"></td>
+      <td onclick="cellClicked(2, 2)"></td>
+    </tr>
+  </table>
+
+  <script src="main.js"></script>
+</body>
+</html>
